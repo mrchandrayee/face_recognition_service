@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Face Recognition Service</title><link rel="stylesheet" href="/static/style.css"></head>
+<body><main class="wrap">
+<header><div class="eyebrow">LOCAL COMPUTER VISION</div><h1>Face Recognition Service</h1>
+<p>Enroll consenting participants, then process a video locally against your private gallery.</p></header>
+<section class="grid">
+<article class="panel"><h2>1. Enroll a person</h2><form id="enrollForm">
+<label>Display name<input name="name" required placeholder="e.g. Alex"></label>
+<label>Clear face photo<input name="photo" type="file" accept="image/*" required></label>
+<button>Enroll face</button></form><p id="enrollMsg" class="msg"></p></article>
+<article class="panel"><h2>2. Process a video</h2><form id="videoForm">
+<label>Video file<input name="video" type="file" accept="video/*" required></label>
+<button>Analyze video</button></form><p id="videoMsg" class="msg"></p><div id="result"></div></article>
+</section>
+<section class="panel"><h2>Enrolled gallery</h2><p id="gallery">Loading…</p></section>
+<footer>Use only with informed consent and lawful authorization. Matches are probabilistic; verify results manually.</footer>
+</main><script src="/static/app.js"></script></body></html>

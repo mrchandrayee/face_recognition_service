@@ -1,0 +1,13 @@
+app:
+  title: "Face Recognition Service"
+  max_upload_mb: 500
+recognition:
+  model_name: "buffalo_l"
+  # Cosine similarity threshold; tune using consented validation samples.
+  match_threshold: 0.42
+  detection_size: [640, 640]
+tracking:
+  max_disappeared: 20
+  max_distance: 90
+video:
+  output_fps_fallback: 25
